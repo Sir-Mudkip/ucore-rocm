@@ -2,9 +2,10 @@ cosign.key
 _build_*
 output
 _build-*/**
-*ign
+*.ign
 *-config.bu
 server-config.bu
 *.tar.gz
 *.tar.xz
 *.butane
+install-instructions.txt
