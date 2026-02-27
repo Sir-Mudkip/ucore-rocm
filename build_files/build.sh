@@ -9,45 +9,14 @@ set -ouex pipefail
 # List of rpmfusion packages can be found here:
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/43/x86_64/repoview/index.html&protocol=https&redirect=1
 
-# Install ROCm and HIP packages from Fedora repos
+# Install ROCm runtime packages for LLM inference on AMD GPU
 dnf5 install -y \
-    hipblas-devel \
-    hipblaslt-devel \
-    hipcc \
-    hipcc-libomp-devel \
-    hipcub-devel \
-    hipfft-devel \
-    hipfort-devel \
-    hiprand-devel \
-    hiprt-devel \
-    hipsolver-devel \
-    hipsparse-devel \
-    rocalution-devel \
-    rocblas-devel \
-    rocfft-devel \
-    rocm-clang-devel \
-    rocm-clang-tools-extra-devel \
-    rocm-cmake \
-    rocm-comgr-devel \
-    rocm-core-devel \
-    rocm-hip-devel \
-    rocm-libc++-devel \
-    rocm-libc++-static \
-    rocm-llvm-devel \
-    rocm-omp-devel \
-    rocm-runtime-devel \
-    rocm-rpp-devel \
-    rocm-smi-devel \
-    rocminfo \
-    rocdecode-devel \
-    rocjpeg-devel \
-    rocprim-devel \
-    rocrand-devel \
-    rocsolver-devel \
-    rocsparse-devel \
-    rocthrust-devel \
-    roctracer-devel \
-    miopen
+    hipblas \
+    rocblas \
+    rocm-hip \
+    rocm-runtime \
+    rocm-comgr \
+    rocminfo
 
 dnf5 clean all
 rm -rf /tmp/* /var/tmp/*
