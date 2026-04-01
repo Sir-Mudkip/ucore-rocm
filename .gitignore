@@ -9,3 +9,4 @@ server-config.bu
 *.tar.xz
 *.butane
 install-instructions.txt
+custom/brew/
