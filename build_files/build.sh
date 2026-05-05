@@ -27,18 +27,14 @@ dnf5 install -y \
 ### DEBUGGING: Host-level diagnostic tools
 ### ==========================================================================
 dnf5 install -y \
-    tcpdump \
-    iotop \
-    strace
+    tcpdump
 
 ### ==========================================================================
 ### CLI TOOLS & EDITOR
 ### ==========================================================================
 dnf5 install -y \
     neovim \
-    gh \
-    ripgrep \
-    fzf
+    ripgrep
 
 ### ==========================================================================
 ### KUBERNETES: CLI tools for cluster management
